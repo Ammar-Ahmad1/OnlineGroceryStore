@@ -1,0 +1,18 @@
+1 Coffee 1000 20
+2 Rice 1000 10
+3 Milk 1000 20
+4 GreenTea 1000 30
+5 RawHoney 1000 40
+6 BodyLotion 1000 10
+7 Oats 1000 20
+8 CookingOil 1000 25
+9 ShowerGel 1000 55
+10 Detergent 1000 60
+11 DishWash 1000 50
+12 HandWash 1000 30
+13 ToothPaste 1000 10
+14 Cereal 1000 10
+15 NoItem 0
+16 NoItem 0
+17 NoItem 0
+18 NoItem 0

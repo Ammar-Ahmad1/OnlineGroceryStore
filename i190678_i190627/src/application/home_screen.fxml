@@ -1,0 +1,848 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ap" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="630.0" prefWidth="760.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Main_Controller">
+   <children>
+      <ScrollPane layoutX="1.0" layoutY="68.0" pannable="true" prefHeight="564.0" prefWidth="760.0" style="-fx-background-color: #f6f8ee;">
+         <content>
+            <AnchorPane prefHeight="1500.0" prefWidth="750.0" style="-fx-background-color: #f6f8ee;">
+               <children>
+                  <VBox layoutX="521.0" layoutY="262.0" prefHeight="200.0" prefWidth="192.0" style="-fx-background-color: #fafafa; -fx-border-radius: 10px;">
+                     <children>
+                        <ImageView fitHeight="138.0" fitWidth="195.0" pickOnBounds="true" preserveRatio="true">
+                           <VBox.margin>
+                              <Insets left="75.0" top="10.0" />
+                           </VBox.margin>
+                           <image>
+                              <Image url="@../images/bodylotion.png" />
+                           </image>
+                        </ImageView>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label fx:id="p6" prefHeight="30.0" prefWidth="130.0" text="BodyLotion 1000" textFill="#6c7994">
+                                 <HBox.margin>
+                                    <Insets left="40.0" top="2.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <TextField fx:id="qty6" prefHeight="35.0" prefWidth="50.0" promptText="Qty">
+                                 <HBox.margin>
+                                    <Insets left="15.0" top="2.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <Button fx:id="toCart6" mnemonicParsing="false" onAction="#addItemsToCart" prefHeight="35.0" prefWidth="100.0" text="Add to Cart" textFill="#5d6a83">
+                                 <HBox.margin>
+                                    <Insets left="15.0" top="2.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="521.0" layoutY="32.0" prefHeight="200.0" prefWidth="192.0" style="-fx-background-color: #fafafa; -fx-border-radius: 10px;">
+                     <children>
+                        <ImageView fitHeight="138.0" fitWidth="195.0" pickOnBounds="true" preserveRatio="true">
+                           <VBox.margin>
+                              <Insets left="60.0" top="10.0" />
+                           </VBox.margin>
+                           <image>
+                              <Image url="@../images/milk.png" />
+                           </image>
+                        </ImageView>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label fx:id="p3" prefHeight="30.0" prefWidth="130.0" text="Milk 1000" textFill="#6c7994">
+                                 <HBox.margin>
+                                    <Insets left="40.0" top="2.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <TextField fx:id="qty3" prefHeight="35.0" prefWidth="50.0" promptText="Qty">
+                                 <HBox.margin>
+                                    <Insets left="15.0" top="2.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <Button fx:id="toCart3" mnemonicParsing="false" onAction="#addItemsToCart" prefHeight="35.0" prefWidth="100.0" text="Add to Cart" textFill="#5d6a83">
+                                 <HBox.margin>
+                                    <Insets left="15.0" top="2.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="283.0" layoutY="32.0" prefHeight="200.0" prefWidth="192.0" style="-fx-background-color: #fafafa; -fx-border-radius: 10px;">
+                     <children>
+                        <ImageView fitHeight="124.0" fitWidth="99.0" pickOnBounds="true" preserveRatio="true">
+                           <VBox.margin>
+                              <Insets left="60.0" top="10.0" />
+                           </VBox.margin>
+                           <image>
+                              <Image url="@../images/rice.png" />
+                           </image>
+                        </ImageView>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label fx:id="p2" prefHeight="30.0" prefWidth="130.0" text="Rice 1000" textFill="#6c7994">
+                                 <HBox.margin>
+                                    <Insets left="40.0" top="2.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <TextField fx:id="qty2" prefHeight="35.0" prefWidth="50.0" promptText="Qty">
+                                 <HBox.margin>
+                                    <Insets left="15.0" top="2.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <Button fx:id="toCart2" mnemonicParsing="false" onAction="#addItemsToCart" prefHeight="35.0" prefWidth="100.0" text="Add to Cart" textFill="#5d6a83">
+                                 <HBox.margin>
+                                    <Insets left="15.0" top="2.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="45.0" layoutY="32.0" prefHeight="200.0" prefWidth="192.0" style="-fx-background-color: #fafafa; -fx-border-radius: 10px;">
+                     <children>
+                        <ImageView fitHeight="138.0" fitWidth="195.0" pickOnBounds="true" preserveRatio="true">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                           <image>
+                              <Image url="@../images/coffee.png" />
+                           </image>
+                        </ImageView>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label fx:id="p1" prefHeight="30.0" prefWidth="130.0" text="Coffee 1000" textFill="#6c7994">
+                                 <HBox.margin>
+                                    <Insets left="40.0" top="2.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <TextField fx:id="qty1" prefHeight="35.0" prefWidth="50.0" promptText="Qty">
+                                 <HBox.margin>
+                                    <Insets left="15.0" top="2.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <Button fx:id="toCart1" mnemonicParsing="false" onAction="#addItemsToCart" prefHeight="35.0" prefWidth="100.0" text="Add to Cart" textFill="#5d6a83">
+                                 <HBox.margin>
+                                    <Insets left="15.0" top="2.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="45.0" layoutY="262.0" prefHeight="200.0" prefWidth="192.0" style="-fx-background-color: #fafafa; -fx-border-radius: 10px;">
+                     <children>
+                        <ImageView fitHeight="138.0" fitWidth="195.0" pickOnBounds="true" preserveRatio="true">
+                           <VBox.margin>
+                              <Insets left="28.0" top="10.0" />
+                           </VBox.margin>
+                           <image>
+                              <Image url="@../images/greentea.png" />
+                           </image>
+                        </ImageView>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label fx:id="p4" prefHeight="30.0" prefWidth="130.0" text="GreenTea 1000" textFill="#6c7994">
+                                 <HBox.margin>
+                                    <Insets left="40.0" top="2.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <TextField fx:id="qty4" prefHeight="35.0" prefWidth="50.0" promptText="Qty">
+                                 <HBox.margin>
+                                    <Insets left="15.0" top="2.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <Button fx:id="toCart4" mnemonicParsing="false" onAction="#addItemsToCart" prefHeight="35.0" prefWidth="100.0" text="Add to Cart" textFill="#5d6a83">
+                                 <HBox.margin>
+                                    <Insets left="15.0" top="2.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="283.0" layoutY="262.0" prefHeight="200.0" prefWidth="192.0" style="-fx-background-color: #fafafa; -fx-border-radius: 10px;">
+                     <children>
+                        <ImageView fitHeight="138.0" fitWidth="195.0" pickOnBounds="true" preserveRatio="true">
+                           <VBox.margin>
+                              <Insets left="50.0" top="10.0" />
+                           </VBox.margin>
+                           <image>
+                              <Image url="@../images/honey.png" />
+                           </image>
+                        </ImageView>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label fx:id="p5" prefHeight="30.0" prefWidth="130.0" text="RawHoney 1000" textFill="#6c7994">
+                                 <HBox.margin>
+                                    <Insets left="40.0" top="2.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <TextField fx:id="qty5" prefHeight="35.0" prefWidth="50.0" promptText="Qty">
+                                 <HBox.margin>
+                                    <Insets left="15.0" top="2.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <Button fx:id="toCart5" mnemonicParsing="false" onAction="#addItemsToCart" prefHeight="35.0" prefWidth="100.0" text="Add to Cart" textFill="#5d6a83">
+                                 <HBox.margin>
+                                    <Insets left="15.0" top="2.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="47.0" layoutY="494.0" prefHeight="200.0" prefWidth="192.0" style="-fx-background-color: #fafafa; -fx-border-radius: 10px;">
+                     <children>
+                        <ImageView fitHeight="138.0" fitWidth="195.0" pickOnBounds="true" preserveRatio="true">
+                           <VBox.margin>
+                              <Insets left="40.0" top="10.0" />
+                           </VBox.margin>
+                           <image>
+                              <Image url="@../images/oats.png" />
+                           </image>
+                        </ImageView>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label fx:id="p7" prefHeight="30.0" prefWidth="130.0" text="Oats 1000" textFill="#6c7994">
+                                 <HBox.margin>
+                                    <Insets left="40.0" top="2.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <TextField fx:id="qty7" prefHeight="35.0" prefWidth="50.0" promptText="Qty">
+                                 <HBox.margin>
+                                    <Insets left="15.0" top="2.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <Button fx:id="toCart7" mnemonicParsing="false" onAction="#addItemsToCart" prefHeight="35.0" prefWidth="100.0" text="Add to Cart" textFill="#5d6a83">
+                                 <HBox.margin>
+                                    <Insets left="15.0" top="2.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="283.0" layoutY="494.0" prefHeight="200.0" prefWidth="192.0" style="-fx-background-color: #fafafa; -fx-border-radius: 10px;">
+                     <children>
+                        <ImageView fitHeight="138.0" fitWidth="195.0" pickOnBounds="true" preserveRatio="true">
+                           <VBox.margin>
+                              <Insets left="30.0" top="10.0" />
+                           </VBox.margin>
+                           <image>
+                              <Image url="@../images/cookingoil.png" />
+                           </image>
+                        </ImageView>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label fx:id="p8" prefHeight="30.0" prefWidth="130.0" text="CookingOil 1000" textFill="#6c7994">
+                                 <HBox.margin>
+                                    <Insets left="40.0" top="2.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <TextField fx:id="qty8" prefHeight="35.0" prefWidth="50.0" promptText="Qty">
+                                 <HBox.margin>
+                                    <Insets left="15.0" top="2.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <Button fx:id="toCart8" mnemonicParsing="false" onAction="#addItemsToCart" prefHeight="35.0" prefWidth="100.0" text="Add to Cart" textFill="#5d6a83">
+                                 <HBox.margin>
+                                    <Insets left="15.0" top="2.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="45.0" layoutY="731.0" prefHeight="200.0" prefWidth="192.0" style="-fx-background-color: #fafafa; -fx-border-radius: 10px;">
+                     <children>
+                        <ImageView fitHeight="138.0" fitWidth="195.0" pickOnBounds="true" preserveRatio="true">
+                           <VBox.margin>
+                              <Insets left="60.0" top="10.0" />
+                           </VBox.margin>
+                           <image>
+                              <Image url="@../images/detergent.png" />
+                           </image>
+                        </ImageView>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label fx:id="p10" prefHeight="30.0" prefWidth="130.0" text="Detergent 1000" textFill="#6c7994">
+                                 <HBox.margin>
+                                    <Insets left="40.0" top="2.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <TextField fx:id="qty10" prefHeight="35.0" prefWidth="50.0" promptText="Qty">
+                                 <HBox.margin>
+                                    <Insets left="15.0" top="2.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <Button fx:id="toCart10" mnemonicParsing="false" onAction="#addItemsToCart" prefHeight="35.0" prefWidth="100.0" text="Add to Cart" textFill="#5d6a83">
+                                 <HBox.margin>
+                                    <Insets left="15.0" top="2.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="284.0" layoutY="731.0" prefHeight="200.0" prefWidth="192.0" style="-fx-background-color: #fafafa; -fx-border-radius: 10px;">
+                     <children>
+                        <ImageView fitHeight="138.0" fitWidth="195.0" pickOnBounds="true" preserveRatio="true">
+                           <VBox.margin>
+                              <Insets left="70.0" top="10.0" />
+                           </VBox.margin>
+                           <image>
+                              <Image url="@../images/dishwash.png" />
+                           </image>
+                        </ImageView>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label fx:id="p11" prefHeight="30.0" prefWidth="130.0" text="DishWash 1000" textFill="#6c7994">
+                                 <HBox.margin>
+                                    <Insets left="40.0" top="2.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <TextField fx:id="qty11" prefHeight="35.0" prefWidth="50.0" promptText="Qty">
+                                 <HBox.margin>
+                                    <Insets left="15.0" top="2.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <Button fx:id="toCart11" mnemonicParsing="false" onAction="#addItemsToCart" prefHeight="35.0" prefWidth="100.0" text="Add to Cart" textFill="#5d6a83">
+                                 <HBox.margin>
+                                    <Insets left="15.0" top="2.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="521.0" layoutY="494.0" prefHeight="200.0" prefWidth="192.0" style="-fx-background-color: #fafafa; -fx-border-radius: 10px;">
+                     <children>
+                        <ImageView fitHeight="138.0" fitWidth="195.0" pickOnBounds="true" preserveRatio="true">
+                           <VBox.margin>
+                              <Insets left="25.0" top="10.0" />
+                           </VBox.margin>
+                           <image>
+                              <Image url="@../images/bodywash.png" />
+                           </image>
+                        </ImageView>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label fx:id="p9" prefHeight="30.0" prefWidth="130.0" text="ShowerGel 1000" textFill="#6c7994">
+                                 <HBox.margin>
+                                    <Insets left="40.0" top="2.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <TextField fx:id="qty9" prefHeight="35.0" prefWidth="50.0" promptText="Qty">
+                                 <HBox.margin>
+                                    <Insets left="15.0" top="2.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <Button fx:id="toCart9" mnemonicParsing="false" onAction="#addItemsToCart" prefHeight="35.0" prefWidth="100.0" text="Add to Cart" textFill="#5d6a83">
+                                 <HBox.margin>
+                                    <Insets left="15.0" top="2.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="521.0" layoutY="731.0" prefHeight="200.0" prefWidth="192.0" style="-fx-background-color: #fafafa; -fx-border-radius: 10px;">
+                     <children>
+                        <ImageView fitHeight="138.0" fitWidth="195.0" pickOnBounds="true" preserveRatio="true">
+                           <VBox.margin>
+                              <Insets left="70.0" top="10.0" />
+                           </VBox.margin>
+                           <image>
+                              <Image url="@../images/handwash.png" />
+                           </image>
+                        </ImageView>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label fx:id="p12" prefHeight="30.0" prefWidth="130.0" text="HandWash 1000" textFill="#6c7994">
+                                 <HBox.margin>
+                                    <Insets left="40.0" top="2.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <TextField fx:id="qty12" prefHeight="35.0" prefWidth="50.0" promptText="Qty">
+                                 <HBox.margin>
+                                    <Insets left="15.0" top="2.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <Button fx:id="toCart12" mnemonicParsing="false" onAction="#addItemsToCart" prefHeight="35.0" prefWidth="100.0" text="Add to Cart" textFill="#5d6a83">
+                                 <HBox.margin>
+                                    <Insets left="15.0" top="2.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="47.0" layoutY="963.0" prefHeight="200.0" prefWidth="192.0" style="-fx-background-color: #fafafa; -fx-border-radius: 10px;">
+                     <children>
+                        <ImageView fitHeight="138.0" fitWidth="195.0" pickOnBounds="true" preserveRatio="true">
+                           <VBox.margin>
+                              <Insets bottom="35.0" left="10.0" top="65.0" />
+                           </VBox.margin>
+                           <image>
+                              <Image url="@../images/toothpaste.png" />
+                           </image>
+                        </ImageView>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label fx:id="p13" prefHeight="30.0" prefWidth="130.0" text="ToothPaste 1000" textFill="#6c7994">
+                                 <HBox.margin>
+                                    <Insets left="40.0" top="2.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <TextField fx:id="qty13" prefHeight="35.0" prefWidth="50.0" promptText="Qty">
+                                 <HBox.margin>
+                                    <Insets left="15.0" top="2.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <Button fx:id="toCart13" mnemonicParsing="false" onAction="#addItemsToCart" prefHeight="35.0" prefWidth="100.0" text="Add to Cart" textFill="#5d6a83">
+                                 <HBox.margin>
+                                    <Insets left="15.0" top="2.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="284.0" layoutY="963.0" prefHeight="200.0" prefWidth="192.0" style="-fx-background-color: #fafafa; -fx-border-radius: 10px;">
+                     <children>
+                        <ImageView fitHeight="138.0" fitWidth="195.0" pickOnBounds="true" preserveRatio="true">
+                           <VBox.margin>
+                              <Insets left="55.0" top="10.0" />
+                           </VBox.margin>
+                           <image>
+                              <Image url="@../images/cereal.png" />
+                           </image>
+                        </ImageView>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label fx:id="p14" prefHeight="30.0" prefWidth="130.0" text="Cereal 1000" textFill="#6c7994">
+                                 <HBox.margin>
+                                    <Insets left="40.0" top="2.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <TextField fx:id="qty14" prefHeight="35.0" prefWidth="50.0" promptText="Qty">
+                                 <HBox.margin>
+                                    <Insets left="15.0" top="2.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <Button fx:id="toCart14" mnemonicParsing="false" onAction="#addItemsToCart" prefHeight="35.0" prefWidth="100.0" text="Add to Cart" textFill="#5d6a83">
+                                 <HBox.margin>
+                                    <Insets left="15.0" top="2.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="521.0" layoutY="963.0" prefHeight="200.0" prefWidth="192.0" style="-fx-background-color: #fafafa; -fx-border-radius: 10px;">
+                     <children>
+                        <ImageView fitHeight="138.0" fitWidth="195.0" pickOnBounds="true" preserveRatio="true">
+                           <VBox.margin>
+                              <Insets left="50.0" top="10.0" />
+                           </VBox.margin>
+                           <image>
+                              <Image url="@../images/noItem.png" />
+                           </image>
+                        </ImageView>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label fx:id="p15" prefHeight="30.0" prefWidth="130.0" text="NoItem 0" textFill="#6c7994">
+                                 <HBox.margin>
+                                    <Insets left="40.0" top="2.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <TextField fx:id="qty15" prefHeight="35.0" prefWidth="50.0" promptText="Qty">
+                                 <HBox.margin>
+                                    <Insets left="15.0" top="2.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <Button fx:id="toCart15" mnemonicParsing="false" onAction="#addItemsToCart" prefHeight="35.0" prefWidth="100.0" text="Add to Cart" textFill="#5d6a83">
+                                 <HBox.margin>
+                                    <Insets left="15.0" top="2.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="45.0" layoutY="1202.0" prefHeight="200.0" prefWidth="192.0" style="-fx-background-color: #fafafa; -fx-border-radius: 10px;">
+                     <children>
+                        <ImageView fitHeight="138.0" fitWidth="195.0" pickOnBounds="true" preserveRatio="true">
+                           <VBox.margin>
+                              <Insets left="50.0" top="10.0" />
+                           </VBox.margin>
+                           <image>
+                              <Image url="@../images/noItem.png" />
+                           </image>
+                        </ImageView>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label fx:id="p16" prefHeight="30.0" prefWidth="130.0" text="NoItem 0" textFill="#6c7994">
+                                 <HBox.margin>
+                                    <Insets left="40.0" top="2.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <TextField fx:id="qty16" prefHeight="35.0" prefWidth="50.0" promptText="Qty">
+                                 <HBox.margin>
+                                    <Insets left="15.0" top="2.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <Button fx:id="toCart16" mnemonicParsing="false" onAction="#addItemsToCart" prefHeight="35.0" prefWidth="100.0" text="Add to Cart" textFill="#5d6a83">
+                                 <HBox.margin>
+                                    <Insets left="15.0" top="2.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="283.0" layoutY="1202.0" prefHeight="200.0" prefWidth="192.0" style="-fx-background-color: #fafafa; -fx-border-radius: 10px;">
+                     <children>
+                        <ImageView fitHeight="138.0" fitWidth="195.0" pickOnBounds="true" preserveRatio="true">
+                           <VBox.margin>
+                              <Insets left="50.0" top="10.0" />
+                           </VBox.margin>
+                           <image>
+                              <Image url="@../images/noItem.png" />
+                           </image>
+                        </ImageView>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label fx:id="p17" prefHeight="30.0" prefWidth="130.0" text="NoItem 0" textFill="#6c7994">
+                                 <HBox.margin>
+                                    <Insets left="40.0" top="2.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <TextField fx:id="qty17" prefHeight="35.0" prefWidth="50.0" promptText="Qty">
+                                 <HBox.margin>
+                                    <Insets left="15.0" top="2.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <Button fx:id="toCart17" mnemonicParsing="false" onAction="#addItemsToCart" prefHeight="35.0" prefWidth="100.0" text="Add to Cart" textFill="#5d6a83">
+                                 <HBox.margin>
+                                    <Insets left="15.0" top="2.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="521.0" layoutY="1202.0" prefHeight="200.0" prefWidth="192.0" style="-fx-background-color: #fafafa; -fx-border-radius: 10px;">
+                     <children>
+                        <ImageView fitHeight="138.0" fitWidth="195.0" pickOnBounds="true" preserveRatio="true">
+                           <VBox.margin>
+                              <Insets left="50.0" top="10.0" />
+                           </VBox.margin>
+                           <image>
+                              <Image url="@../images/noItem.png" />
+                           </image>
+                        </ImageView>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label fx:id="p18" prefHeight="30.0" prefWidth="130.0" text="NoItem 0" textFill="#6c7994">
+                                 <HBox.margin>
+                                    <Insets left="40.0" top="2.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <TextField fx:id="qty18" prefHeight="35.0" prefWidth="50.0" promptText="Qty">
+                                 <HBox.margin>
+                                    <Insets left="15.0" top="2.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <Button fx:id="toCart18" mnemonicParsing="false" onAction="#addItemsToCart" prefHeight="35.0" prefWidth="100.0" text="Add to Cart" textFill="#5d6a83">
+                                 <HBox.margin>
+                                    <Insets left="15.0" top="2.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <AnchorPane prefHeight="69.0" prefWidth="760.0" style="-fx-background-color: #6c7994;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Button fx:id="giveFeedback" alignment="CENTER" contentDisplay="CENTER" layoutX="43.0" layoutY="17.0" mnemonicParsing="false" onAction="#to_feedback" prefHeight="35.0" prefWidth="115.0" style="-fx-background-radius: 10px;" text="Give Feedback" textAlignment="CENTER" textFill="#67758f">
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font>
+               <effect>
+                  <DropShadow offsetY="4.0" spread="0.08">
+                     <color>
+                        <Color red="0.24705882370471954" green="0.2862745225429535" blue="0.3686274588108063" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+            <Button fx:id="fileComplaint" alignment="CENTER" contentDisplay="CENTER" layoutX="200.0" layoutY="17.0" mnemonicParsing="false" onAction="#to_fileComplaint" prefHeight="35.0" prefWidth="115.0" style="-fx-background-radius: 10px;" text="File Complaint" textAlignment="CENTER" textFill="#67758f">
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font>
+               <effect>
+                  <DropShadow offsetY="4.0" spread="0.08">
+                     <color>
+                        <Color red="0.24705882370471954" green="0.2862745225429535" blue="0.3686274588108063" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+            <Button fx:id="cancelOrder" alignment="CENTER" contentDisplay="CENTER" layoutX="358.0" layoutY="17.0" mnemonicParsing="false" onAction="#to_cancelOrder" prefHeight="35.0" prefWidth="115.0" style="-fx-background-radius: 10px;" text="Cancel Order" textAlignment="CENTER" textFill="#697894">
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font>
+               <effect>
+                  <DropShadow offsetY="4.0" spread="0.08">
+                     <color>
+                        <Color red="0.24705882370471954" green="0.2862745225429535" blue="0.3686274588108063" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+            <Button fx:id="cart" alignment="CENTER" contentDisplay="CENTER" layoutX="524.0" layoutY="14.0" mnemonicParsing="false" onAction="#to_orderSummary" prefHeight="40.0" prefWidth="38.0" style="-fx-background-radius: 10px;" textAlignment="CENTER" textFill="#697894">
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font>
+               <graphic>
+               <ImageView fitHeight="30.0" fitWidth="34.0">
+               <image>
+                  <Image url="@../images/cart.png" />
+               </image>
+               </ImageView>
+               </graphic>
+               <effect>
+                  <DropShadow offsetY="4.0" spread="0.08">
+                     <color>
+                        <Color red="0.24705882370471954" green="0.2862745225429535" blue="0.3686274588108063" />
+                     </color>
+                  </DropShadow>
+               </effect>
+               
+            </Button>
+            <Button fx:id="logout_customer" layoutX="661.0" layoutY="17.0" mnemonicParsing="false" onAction="#to_Login" prefHeight="35.0" prefWidth="80.0" style="-fx-background-radius: 10px;" text="LogOut" textFill="#6c7994">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font>
+               <effect>
+                  <DropShadow offsetY="4.0" spread="0.08">
+                     <color>
+                        <Color red="0.24705882370471954" green="0.2862745225429535" blue="0.3686274588108063" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+         </children>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color opacity="0.7316017150878906" />
+               </color>
+            </DropShadow>
+         </effect>
+      </AnchorPane>
+   </children>
+</AnchorPane>

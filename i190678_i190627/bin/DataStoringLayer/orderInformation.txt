@@ -1,0 +1,8 @@
+Order_ID: 111
+Customer ID: 1
+Order Date: 26/05/22 17:07:27
+Delivery Date: 31/05/2022
+Summary: 1 Coffee 1 1000
+Total: 5000
+Payment details: 
+
